@@ -6,9 +6,10 @@ node_js:
 go: '1.10'
 
 install:
+  - tree -L 3 ~/.ghq
   - go get github.com/motemen/ghq
   - npm install
   
 script:
   - node index.js
-  - ls ~/.ghq
+  - tree -L 3 ~/.ghq
