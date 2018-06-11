@@ -3,4 +3,5 @@ const shellOpts = {
   stdio: 'inherit',
   shell: true
 }
-execSync('ghq', [ 'get', '-p', 'https://github.com/npm/node-which' ], shellOpts)
+execSync('ghq get -p https://github.com/npm/node-which', shellOpts)
+console.log('done')
