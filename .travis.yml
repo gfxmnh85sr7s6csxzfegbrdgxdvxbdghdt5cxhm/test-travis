@@ -6,7 +6,7 @@ node_js:
 go: '1.10'
 
 install:
-  - ghq get https://github.com/motemen/ghq
+  - go get github.com/motemen/ghq
   - npm install
   
 script:
