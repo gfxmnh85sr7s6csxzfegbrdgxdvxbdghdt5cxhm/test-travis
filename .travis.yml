@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - '8'
+  
+go: '1.10'
+
+install:
+  - ghq get https://github.com/motemen/ghq
+  - npm install
+  
+script:
+  - node index.js
+  - ls ~/.ghq
