@@ -5,6 +5,9 @@ node_js:
   
 go: '1.10'
 
+before_install:
+  - sudo apt-get install -y tree
+
 install:
   - tree -L 3 ~/.ghq
   - go get github.com/motemen/ghq
